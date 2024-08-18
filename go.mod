@@ -1,4 +1,4 @@
-module gitlab.com/MShilenko/gen-test
+module github.com/MShilenko/gen-test
 
 go 1.22.3
 
