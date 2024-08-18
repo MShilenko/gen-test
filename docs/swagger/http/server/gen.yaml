@@ -1,0 +1,10 @@
+generate:
+  gorilla-server: true
+  strict-server: true
+  embedded-spec: true
+  models: true
+output-options:
+  skip-prune: true
+  nullable-type: true
+# В v2.4.0 должны завести деление сгенерированных сущностей(интерфейсы и т.д.) от единой в деление по tags swagger. Отличное решение. Но пока нет даты релиза
+# group-by-tag: true

@@ -1,0 +1,62 @@
+openapi: '3.0.3'
+info:
+  title: API Test
+  version: '1.0'
+servers:
+  - url: http://localhost:8080/v1
+tags:
+  - name: Test2
+    description: Second test service
+paths:
+  /test2:
+    post:
+      tags:
+      - Test2
+      description: Handler for Second service
+      requestBody:
+        description: Do something second time
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Test2Request'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test2Response'
+components:
+  schemas:
+    Test2Request:
+      description: Test 2 handler request
+      type: object
+      properties:
+        id:
+          description: some ID
+          type: integer
+          format: int64
+          example: 10
+        val:
+          description: some Value
+          type: string
+          example: test-value
+      required:
+        - id
+        - val
+    Test2Response:
+      description: Test 2 handler response
+      type: object
+      properties:
+        id:
+          description: some ID
+          type: integer
+          format: int64
+          example: 10
+        result:
+          description: some Result
+          type: string
+          example: test-result
+      required:
+        - id
+        - result

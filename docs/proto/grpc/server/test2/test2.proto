@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package grpc.server.test2;
+
+option go_package = "grpc.server/test2";
+
+service Test2Service {
+  rpc TestHandlerV1(TestHandlerV1Request) returns (TestHandlerV1Response) {}
+}
+
+message TestHandlerV1Request {
+  string value = 1;
+}
+
+message TestHandlerV1Response {
+  string value = 1;
+}
