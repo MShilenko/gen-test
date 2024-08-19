@@ -1,4 +1,4 @@
-.PHONY: gen-grpc-server
+.PHONY: gen-grpc-server gen-http-server
 
 gen-grpc-server:
 	sh ./scripts/gen-grpc-server.sh
