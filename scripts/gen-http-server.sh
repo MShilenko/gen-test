@@ -1,5 +1,5 @@
 #!/bin/bash
-SERVER_FOLDER=gen/http-server
+SERVER_FOLDER=gen/http/server
 SWAGGER_FOLDER=docs/swagger/http/server
 
 mkdir -p $SERVER_FOLDER

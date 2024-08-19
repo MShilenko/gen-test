@@ -2,12 +2,12 @@ version: v2
 plugins:
   # protoc-gen-go - go types
   - local: protoc-gen-go
-    out: gen/grpc-server
+    out: gen/grpc/server
     opt:
       - paths=source_relative
   # protoc-gen-go - grpc service and client
   - local: protoc-gen-go-grpc
-    out: gen/grpc-server
+    out: gen/grpc/server
     opt:
       - paths=source_relative
   # protoc-gen-openapiv2 - swagger api (openapiv2)

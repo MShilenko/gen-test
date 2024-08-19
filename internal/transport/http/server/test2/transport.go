@@ -3,7 +3,7 @@ package test2
 import (
 	"context"
 
-	gen2Test "github.com/MShilenko/gen-test/gen/http-server/test2"
+	gen2Test "github.com/MShilenko/gen-test/gen/http/server/test2"
 )
 
 type Transport struct{}
